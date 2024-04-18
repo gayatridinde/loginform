@@ -1,0 +1,70 @@
+body{
+    margin:0;
+    padding:0;
+    background-size:cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Montserrat',sans-serif;
+    color:#fff;
+}
+.formbox{
+ width: 400px;   
+ background: rgba(0,0,0,0.7);
+ border-radius: 10px;
+ padding: 0 24px 48px;
+ box-shadow: 0 1px 20px 5px;
+ box-sizing: border-box;
+}
+.formbox h2{
+    line-height: 48px;
+    margin:24px 0;
+    letter-spacing:2px;
+    text-align: center; 
+}
+.formbox .inputbox{
+position: relative;
+}
+.formbox .inputbox input{
+width:100%;
+padding: 10px 0;
+font-size: 1rem;
+color:#fff;
+margin-bottom:30px;
+border:none;
+outline:none;
+border-bottom: 1px solid #fff;
+background:transparent;
+}
+.formbox .inputbox label{
+    position: absolute;
+    top:0;
+    left:0;
+    font-size: 1rem;
+    pointer-events: none;
+    transition: 0.5s;
+}
+/*add label hover effect*/
+.formbox .inputbox input:focus ~ label,
+.formbox .inputbox input:focus ~ valid{
+    top:-18px;
+    left:0;
+    font-size: 14px;
+    color:#fcdb00;
+}
+.formbox input[type="submit"]{
+background: #fcdb00;
+border:none;
+outline:none;
+color:#333;
+padding: 10px 20px;
+border-radius: 10px;
+font-weight: 600;
+cursor: pointer;
+}
+/*add submit button hover effect*/
+.formbox input[type="submit"]:hover{
+background: #a5b00c;
+}
